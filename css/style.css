@@ -65,7 +65,7 @@ a {
     background-color: #000;
 }
 
-.homepage .wrapper {
+.wrapper {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
@@ -173,4 +173,293 @@ a {
 .homepage .wrapper .banner .right {
     width: 50%;
     overflow: hidden;
+}
+
+.homepage .categories {
+    margin: 32px 0;
+}
+
+.homepage .categories .wrapper div.smallHead {
+    display: flex;
+    align-items: center;
+}
+
+.homepage .categories .wrapper div.smallHead div.redrect {
+    height: 30px;
+    width: 12px;
+    background-color: #DB4444;
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.homepage .categories .wrapper div.smallHead h6 {
+    color: #DB4444;
+    font-size: 12px;
+}
+
+.homepage .categories .wrapper .categoryHead {
+    margin: 24px 0;
+    font-weight: 600;
+}
+
+.homepage .categories .wrapper div.CateItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homepage .categories .wrapper div.CateItems div.item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 24px;
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage .categories .wrapper div.CateItems div.item:last-child {
+    margin-right: 0;
+}
+
+.homepage .categories .wrapper div.CateItems div.item img {
+    max-width: 50px;
+}
+
+.homepage .categories .wrapper div.CateItems div.item span {}
+
+.products {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.products div.productList {
+    /* display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+}
+
+.products div.productList div.product {
+
+
+    margin-bottom: 24px;
+
+}
+
+
+
+.products div.productList div.product div.top {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    display: flex;
+    padding: 32px 46px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.products div.productList div.product div.top .product-image {
+    max-width: 100px;
+}
+
+.products div.productList div.product div.top .white-round {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    padding: 4px;
+    background-color: #fff;
+    margin-bottom: 4px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products div.productList div.product div.top .icon {
+
+    width: 15px;
+}
+
+.products div.productList div.product div.bottom {
+    margin-top: 12px;
+}
+
+.products div.productList div.product div.bottom h6 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.products div.productList div.product div.bottom span {
+    color: #DB4444;
+    margin-right: 6px;
+}
+
+.products div.productList div.product div.bottom div.rating {
+    display: inline-block;
+}
+
+.products div.productList div.product div.bottom div.rating img {
+    width: 15px;
+}
+
+.products div.productList div.product div.top div.addTocart {
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.products div.productList div.product div.top .new {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.products .viewButton {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 18px 40px;
+    background-color: #DB4444;
+    color: #f5f5f5;
+    border-radius: 4px;
+
+}
+
+.products .color {
+    display: flex;
+    margin-top: 8px;
+}
+
+.products .color .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.products .color .circle:last-child {
+    margin-right: 0;
+}
+
+.products .color .border {
+    background-color: black;
+
+
+}
+
+.products .color .circle .border {
+    background-color: #ffffff;
+    padding: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.products .color .circle .last {
+
+    padding: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.products .color .red {
+    background-color: red;
+}
+
+.products .color .low-red {
+    background-color: #DB4444;
+}
+
+.products .color .yellow {
+    background-color: yellow;
+}
+
+.products .color .black {
+    background-color: #000;
+}
+
+.products .color .green {
+    background-color: #184A48;
+}
+
+.features {
+    margin: 40px 0;
+}
+
+.features .wrapper {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.features div.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.features div.list div.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features div.list div.feature div.circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #c1c0c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.features div.list div.feature div.circle div.double-circle {
+    background-color: #000;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features div.list div.feature div.circle img {
+    width: 30px;
+}
+
+.features div.list div.feature h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.features div.list div.feature p {
+    font-size: 12px;
+    opacity: 0.7;
 }
