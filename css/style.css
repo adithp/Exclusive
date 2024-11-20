@@ -204,7 +204,9 @@ a {
 
 .homepage .categories .wrapper div.CateItems {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 .homepage .categories .wrapper div.CateItems div.item {
@@ -216,6 +218,10 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    max-width: 180px;
+    flex: 1 0 30%;
+    margin-top: 16px;
 }
 
 .homepage .categories .wrapper div.CateItems div.item:last-child {
@@ -440,6 +446,8 @@ div.productList div.product div.top .new {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
 
 }
 
@@ -447,6 +455,7 @@ div.productList div.product div.top .new {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 12px;
 }
 
 .features div.list div.feature div.circle {
@@ -495,9 +504,12 @@ footer .wrapper {
     display: flex;
     justify-content: space-between;
     text-align: left;
+    flex-wrap: wrap;
 }
 
-footer div.items {}
+footer div.items {
+    margin-bottom: 16px;
+}
 
 footer div.items h1 {
     font-weight: 700;
@@ -750,3 +762,98 @@ footer p {
     font-size: 12px;
     font-weight: 600;
 }
+
+@media all and (max-width:1280px) {
+    div.productList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media all and (max-width:980px) {
+    .homepage .categories .wrapper div.CateItems div.item:last-child {
+        margin-right: 20px;
+    }
+
+    .homepage .wrapper div.topbar div.navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homepage .wrapper div.topbar div.navbar a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    div.productList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (max-width:768px) {
+    div.productList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .homepage .wrapper div.topbar div.navbar {
+        display: none;
+    }
+
+    .homepage div.adbar p {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width:640px) {
+    .homepage div.adbar {
+        height: 80px;
+
+    }
+
+    .homepage div.adbar select.lang {
+        right: 45%;
+        top: 60%;
+    }
+
+    .homepage .wrapper .banner .right {
+        display: none;
+    }
+
+    .homepage .wrapper .banner .left {
+        width: 100%;
+        padding: 36px;
+    }
+
+    .homepage .wrapper .banner .left h1 {
+        font-size: 28px;
+    }
+}
+
+@media all and (max-width:480px) {
+    .homepage div.adbar {
+        height: 120px;
+
+    }
+
+    .homepage .wrapper div.topbar div.right input {
+        display: none;
+
+    }
+
+    .homepage .wrapper .banner .left h1 {
+        font-size: 22px;
+    }
+
+    .homepage .categories .wrapper div.CateItems div.item {
+        padding: 12px;
+
+    }
+
+    div.productList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media all and (max-width:360px) {}
+
+@media all and (max-width:320px) {}
