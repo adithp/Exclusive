@@ -319,7 +319,7 @@ div.productList div.product div.bottom span {
 }
 
 div.productList div.product div.bottom div.rating {
-    display: block;
+    display: inline-block;
 }
 
 div.productList div.product div.bottom div.rating img {
