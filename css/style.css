@@ -788,8 +788,8 @@ footer p {
     }
 
     .homepage .wrapper div.topbar div.navbar {
-        display: flex;
-        flex-direction: column;
+        display: none;
+
     }
 
     .homepage .wrapper div.topbar div.navbar a {
